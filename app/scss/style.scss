@@ -1,0 +1,225 @@
+@import "vars";
+@import "global";
+@import "libs";
+@import "fonts";
+
+.header{
+    padding-top: 75px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            display: flex;
+            align-items: baseline;
+            .logo{
+                padding-right: 80px;
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    background: url(../img/sprite.png) no-repeat top right;
+                    vertical-align: sub;
+                    width: 156px;
+                    height: 43px;
+                    background-position: -5px -5px;
+                }
+            }
+            .mail{
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    background: url(../img/sprite.png) no-repeat;
+                    vertical-align: bottom;
+                    width: 34px;
+                    height: 26px;
+                    background-position: -314px -99px;
+                }
+                p{
+                    display: inline-block;
+                    font-size: 21px;
+                    margin: 0;
+                }
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .btn{
+                padding: 12px 25px;
+                border-radius: 100px;
+                border: 0;
+                background-color: #5eb785;
+                cursor: pointer;
+                span{
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: bold;
+                    &:after{
+                        content: "";
+                        display: inline-block;
+                        vertical-align: sub;
+                        background: url(../img/sprite.png) no-repeat top right;
+                        width: 25px;
+                        height: 25px;
+                        background-position: -96px -63px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                padding-left: 40px;
+                &-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    width: 140px;
+                    a {
+                        color: black;
+                        padding: 2px 0 2px 25px;
+                        text-decoration: none;
+                        display: block;
+                        .a:first-child{
+                            background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+                        }
+                        .a:last-child{
+                            background: url('http://www.miru-mir.info/images/en.gif') no-repeat left center;
+                        }
+                        &:hover {
+                            background-color: #f1f1f1
+                        }
+                    }
+                }
+                &:hover .dropdown-content {
+                    display: block;
+                }
+            }
+            .dropbtn {
+                padding: 5px;
+                cursor: pointer;
+                background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
+                padding-left: 25px;
+                width: 40px;
+                &:after {
+                    background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
+                    content: "";
+                    height: 16px;
+                    position: absolute;
+                    right: 0;
+                    top: 7px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        &-menu{
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .menu{
+                margin: 0;
+                .fa-shopping-cart{
+                    cursor: pointer;
+                    &:hover{
+                        color: #9a9a9a;
+                        transition: color .3s ease-out;
+                    }
+                }
+                .header__btn{
+                    display: none;
+                    cursor: pointer;
+                    margin-left: 15px;
+                    padding-left: 1.25em;
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    &-top {
+                        top: 0;
+                    }
+                    &-middle {
+                        top: 15px;
+                    }
+                    &-bottom {
+                        top: 30px;
+                    }
+                    &-top-click {
+                        backface-visibility: hidden;
+                        top: 15px;
+                        transform: rotate(50deg);
+                        transition: 0.55s 0.5s;
+                    }
+                    &-middle-click {
+                        opacity: 0;
+                    }
+                    &-bottom-click {
+                        backface-visibility: hidden;
+                        top: 15px;
+                        transform: rotate(-410deg);
+                        transition: 0.55s 0.5s;
+                    }
+                    &-global {
+                        backface-visibility: hidden;
+                        position: absolute;
+                        left: 0;
+                        border-top: 7px solid #000;
+                        width: 100%;
+                        transition: 0.55s;
+                    }
+                }
+                ul{
+                display: flex;
+                justify-content: space-between;
+                font-size: 22px;
+                    li{
+                        + li {
+                            padding: 0 30px;
+                        }
+                        a{
+                            color: #000;
+                            font-size: 15px;
+                            &:hover{
+                                color: #9a9a9a;
+                                transition: color .3s ease-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contacts{
+            ul{
+                li{
+                    .tele{
+                        background: url(../img/sprite.png) no-repeat top right;
+                        display: inline-block;
+                        width: 39px;
+                        height: 36px;
+                        background-position: -115px -159px;
+                    }
+                    .inst{
+                        background: url(../img/sprite.png) no-repeat top right;
+                        display: inline-block;
+                        width: 38px;
+                        height: 38px;
+                        background-position: -256px -210px;
+                    }
+                    .vk{
+                        background: url(../img/sprite.png) no-repeat top right;
+                        display: inline-block;
+                        width: 46px;
+                        height: 29px;
+                        background-position: -304px -210px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@import "media";
