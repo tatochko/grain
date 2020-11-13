@@ -4,8 +4,9 @@
 @import "fonts";
 
 .header{
-    padding-top: 75px;
+    padding-bottom: 130px;
     &__top{
+        padding-top: 75px;
         display: flex;
         justify-content: space-between;
         .left{
@@ -221,11 +222,14 @@
         &-slider{
             grid-area: slider;
             width: 1100px;
+            position: relative;
             &:focus {
                 outline: none;
             }
-            .slider-arrow{
+            .slider-arrows{
                 position: absolute;
+                bottom: -100px;
+                left: 180px;
             }
             .arrow-next{
                 border-radius: 0 10em 10em 0;
@@ -233,6 +237,7 @@
                 padding: 12px 20px 10px 30px;
                 cursor: pointer;
                 background-color: #fff;
+                box-shadow: 0px 7px 24.3px 2.7px #cecece;
                 &:focus {
                     outline: none;
                 }
@@ -246,11 +251,12 @@
                 }
                 &.slick-disabled{
                     background-color: #e6e6e6;
-                    box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                    box-shadow: none;
                     &:before {
                         content: "";
                         background: url(../img/sprite.png) no-repeat top right;
                         display: inline-block;
+                        opacity: 0.5;
                         width: 11px;
                         height: 19px;
                         background-position: -5px -63px;
@@ -261,8 +267,10 @@
                 border-radius: 10em 0 0 10em;
                 border-style: none;
                 padding: 12px 20px 10px 30px;
+                left: 119px;
                 cursor: pointer;
                 background-color: #fff;
+                box-shadow: 0px 7px 24.3px 2.7px #cecece;
                 &:focus {
                     outline: none;
                 }
@@ -276,11 +284,12 @@
                 }
                 &.slick-disabled{
                     background-color: #e6e6e6;
-                    box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                    box-shadow: none;
                     &:before {
                         content: "";
                         background: url(../img/sprite.png) no-repeat top right;
                         display: inline-block;
+                        opacity: 0.5;
                         width: 11px;
                         height: 19px;
                         background-position: -203px -34px;
@@ -327,6 +336,82 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.group{
+    .group__items{
+        padding-top: 130px;
+        padding-bottom: 80px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: flex-end;
+        &-item{
+            width: 380px;
+            .car{
+                background: url(../img/sprite.png) no-repeat top right;
+                display: inline-block;
+                width: 100px;
+                height: 78px;
+                background-position: -5px -105px;
+            }
+            .warranty{
+                &:before{
+                    content: "";
+                    background: url(../img/sprite.png) no-repeat top right;
+                    display: inline-block;
+                    width: 68px;
+                    height: 96px;
+                    background-position: -360px -5px;
+                }
+            }
+            .control{
+                &:before{
+                    content: "";
+                    background: url(../img/sprite.png) no-repeat top right;
+                    display: inline-block;
+                    width: 100px;
+                    height: 76px;
+                    background-position: -201px -124px;
+                }
+            }
+            .discount{
+                &:before{
+                    content: "";
+                    background: url(../img/sprite.png) no-repeat top right;
+                    display: inline-block;
+                    width: 94px;
+                    height: 92px;
+                    background-position: -65px -210px;
+                }
+            }
+            h3{
+                font-size: 24px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.catalog{
+    .catalog__slider{
+        &-item{
+            display: flex;
+            justify-content: space-between;
+            .left{
+                .a{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .info{
+                float: right;
             }
         }
     }
