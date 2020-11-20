@@ -684,9 +684,98 @@
         background-repeat: no-repeat;
         background-position: center;
         .check__main-inner{
+            display: flex;
             padding: 50px 0;
+            input{
+                padding: 12px 25px;
+                border-radius: 100px;
+                border: 0;
+            }
+            .btn{
+                margin: 0 30px;
+                color: #fff;
+            }
+            .message{
+                position: relative;
+                color: #5eb785;
+                .success{
+                    position: absolute;
+                    span{
+                        position: absolute;
+                        padding: 8px 10px;
+                        top: 4px;
+                        left: 10px;
+                        border-radius: 100px;
+                        border: 0;
+                        background-color: #5eb785;
+                        &:before{
+                            content: "";
+                            background: url(../img/sprite.png) no-repeat top right;
+                            display: inline-block;
+                            width: 19px;
+                            height: 18px;
+                            background-position: -131px -63px;
+                        }
+                    }
+                    p{
+                        padding: 12px 25px;
+                        margin: 0 30px;
+                        border-radius: 100px;
+                        border: 0;
+                        background-color: #fff;
+                        width: 310px;
+                    }
+                }
+                .error{
+                    position: absolute;
+                    visibility: hidden;
+                    position: absolute;
+                    span{
+                        position: absolute;
+                        padding: 8px 10px;
+                        top: 4px;
+                        left: 10px;
+                        border-radius: 100px;
+                        border: 0;
+                        background-color: #5eb785;
+                        &:before{
+                            content: "";
+                            background: url(../img/sprite.png) no-repeat top right;
+                            display: inline-block;
+                            width: 19px;
+                            height: 18px;
+                            background-position: -131px -63px;
+                        }
+                    }
+                    p{
+                        padding: 12px 25px;
+                        border-radius: 100px;
+                        border: 0;
+                        background-color: #fff;
+                        width: 392px;
+                    }
+                }
+            }
         }
     }
 }
 
+.form{
+    .form__inner{
+        display: flex;
+        justify-content: space-between;
+        &-left{
+            .box{
+                border-radius: 100px;
+                border: 0;
+                background-color: #fff;
+                box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                &-inner{
+                    display: inline-grid;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 @import "media";
