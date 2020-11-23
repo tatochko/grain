@@ -105,7 +105,7 @@
                 padding: 5px;
                 cursor: pointer;
                 background: url('http://icons.iconarchive.com/icons/custom-icon-design/flag-3/16/Russia-Flag-icon.png') no-repeat left center;
-                padding-left: 25px;
+                padding-left: 35px;
                 width: 40px;
                 &:after {
                     background: rgba(0, 0, 0, 0) url("https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-16.png") no-repeat scroll center center;
@@ -201,6 +201,7 @@
             grid-area: contacts;
             ul{
                 li{
+                    cursor: pointer;
                     + li {
                         padding-top: 40px;
                     }
@@ -653,6 +654,7 @@
             display: block !important;
             width: 400px !important;
             margin: 0 auto;
+            background-color: #fff !important;
             background: url(../img/line-g.png);
             background-repeat: no-repeat;
             background-position: bottom;
@@ -761,18 +763,192 @@
 }
 
 .form{
+    background: linear-gradient(to top, #dfeee5, #fff);
     .form__inner{
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 150px;
         &-left{
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 100px;
             .box{
-                border-radius: 100px;
+                border-radius: 20px;
                 border: 0;
                 background-color: #fff;
                 box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                width: 500px;
+                &-title{
+                    padding-top: 30px;
+                    padding-left: 30px;
+                }
                 &-inner{
-                    display: inline-grid;
+                    display: block;
                     text-align: center;
+                    padding: 50px;
+                    input{
+                        display: block;
+                        border-radius: 100px;
+                        border: 0;
+                        background-color: #fff;
+                        box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                        width: 400px;
+                        height: 40px;
+                        margin-bottom: 40px;
+                        padding-left: 20px;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    textarea{
+                        display: block;
+                        border-radius: 20px;
+                        border: 0;
+                        background-color: #fff;
+                        box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                        width: 400px;
+                        height: 200px;
+                        margin-bottom: 40px;
+                        padding-left: 20px;
+                        padding-top: 20px;
+                        resize: none;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    .btn{
+                        color: #fff;
+                    }
+                }
+            }
+            .contacts{
+                border-radius: 20px;
+                border: 0;
+                background-color: #fff;
+                box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                padding: 30px 20px;
+                margin-left: 20px;
+                ul{
+                    li{
+                        cursor: pointer;
+                        + li {
+                            padding-top: 40px;
+                        }
+                        .tele{
+                            background: url(../img/sprite.png) no-repeat top right;
+                            display: inline-block;
+                            width: 39px;
+                            height: 36px;
+                            background-position: -115px -159px;
+                        }
+                        .inst{
+                            background: url(../img/sprite.png) no-repeat top right;
+                            display: inline-block;
+                            width: 38px;
+                            height: 38px;
+                            background-position: -256px -210px;
+                        }
+                        .vk{
+                            background: url(../img/sprite.png) no-repeat top right;
+                            display: inline-block;
+                            width: 46px;
+                            height: 29px;
+                            background-position: -304px -210px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #151515;
+    .container{
+        position: relative;
+    }
+    .footer-sub{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 45px;
+        p{
+            color: #fff;
+        }
+        input{
+            display: block;
+            border-radius: 100px;
+            border: 0;
+            background-color: #656c73;
+            height: 40px;
+            width: 250px;
+            padding: 0 20px;
+            &::placeholder {
+                color: #d1d1d1;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .line{
+        &:before{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: #575c59;
+        }
+    }
+    .menu{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 22px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            li{
+                + li {
+                    padding-left: 55px;
+                }
+                a{
+                    color: #fff;
+                    font-size: 15px;
+                    &:hover{
+                        color: #5eb785;
+                        transition: color .3s ease-out;
+                    }
+                }
+            }
+            .logo{
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    background: url(../img/sprite.png) no-repeat top right;
+                    vertical-align: sub;
+                    width: 156px;
+                    height: 43px;
+                    background-position: -5px -5px;
+                }
+                p{
+                    margin: 0;
+                    padding-top: 10px;
+                    color: #fff;
+                }
+            }
+            .mail{
+                &:before{
+                    content: "";
+                    display: inline-block;
+                    background: url(../img/sprite.png) no-repeat;
+                    vertical-align: bottom;
+                    width: 34px;
+                    height: 26px;
+                    background-position: -314px -99px;
+                    margin-right: 10px;
                 }
             }
         }
