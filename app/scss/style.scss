@@ -164,7 +164,7 @@
                         backface-visibility: hidden;
                         position: absolute;
                         left: 0;
-                        border-top: 7px solid #000;
+                        border-top: 7px solid #5eb785;
                         width: 100%;
                         transition: 0.55s;
                     }
@@ -254,7 +254,6 @@
                 &.slick-disabled{
                     background-color: #e6e6e6;
                     box-shadow: none;
-                    cursor: no-drop;
                     &:before {
                         content: "";
                         background: url(../img/sprite.png) no-repeat top right;
@@ -288,7 +287,6 @@
                 &.slick-disabled{
                     background-color: #e6e6e6;
                     box-shadow: none;
-                    cursor: no-drop;
                     &:before {
                         content: "";
                         background: url(../img/sprite.png) no-repeat top right;
@@ -456,7 +454,6 @@
                 background-position: -224px -55px;
             }
             &.slick-disabled{
-                cursor: no-drop;
                 &:before {
                     content: "";
                     background: url(../img/sprite.png) no-repeat top right;
@@ -488,7 +485,6 @@
                 background-position: -268px -5px;
             }
             &.slick-disabled{
-                cursor: no-drop;
                 &:before {
                     content: "";
                     background: url(../img/sprite.png) no-repeat top right;
@@ -616,7 +612,6 @@
             &.slick-disabled{
                 background-color: #e6e6e6;
                 box-shadow: none;
-                cursor: no-drop;
                 &:before {
                     content: "";
                     background: url(../img/sprite.png) no-repeat top right;
@@ -648,7 +643,6 @@
             }
             &.slick-disabled{
                 background-color: #e6e6e6;
-                cursor: no-drop;
                 box-shadow: none;
                 &:before {
                     content: "";
