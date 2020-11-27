@@ -7,7 +7,6 @@ $(function(){
         prevArrow: '<button type = "button" class = "slider-arrows arrow-prev"></ button>',
         nextArrow: '<button type = "button" class = "slider-arrows arrow-next"></ button>',
         adaptiveHeight: true,
-        slideWidth: 1075,
         asNavFor: '.slider-dotshead',
     });
 

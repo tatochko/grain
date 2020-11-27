@@ -965,4 +965,73 @@
         }
     }
 }
+
+///////////////////////////////////////////// 2 page
+
+.header-cart{
+    padding-bottom: 0;
+}
+
+.header__main-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout{
+    .checkout__inner{
+        display: flex;
+        &-products{
+            display: flex;
+            flex-wrap: wrap;
+            .item{
+                width: 320px;
+                height: 370px;
+                text-align: center;
+                background-color: #fff;
+                box-shadow: 0px 7px 24.3px 2.7px #cecece;
+                border-radius: 0 2em 0 2em;
+                &-top{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 20px;
+                    font-weight: 700;
+                    .left{
+                        color: #5eb785;
+                        cursor: pointer;
+                    }
+                    .right{
+                        color: #c23131;
+                        cursor: pointer;
+                    }
+                }
+                .img{
+                    width: 100%;
+                }
+                &-amount{
+                    input{
+                        width: 40px;
+                        background-color: #f4fbff;
+                        border-style: none;
+                        text-align: center;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    button{
+                        border-style: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                        font-size: 26px;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    .plus{
+                        color: #5eb785;
+                    }
+                }
+            }
+        }
+    }
+}
 @import "media";
