@@ -984,6 +984,7 @@
 .checkout{
     .checkout__inner{
         display: flex;
+        justify-content: space-between;
         &-products{
             display: flex;
             flex-wrap: wrap;
@@ -1032,6 +1033,93 @@
                     }
                     .plus{
                         color: #5eb785;
+                    }
+                }
+            }
+        }
+        &-order{
+            table{
+                th {
+                    font-weight: 700;
+                    padding: 10px 8px;
+                }
+                td {
+                    padding: 9px 8px;
+                    transition: .3s linear;
+                }
+            }
+            .check__main-inner{
+                display: flex;
+                padding: 20px 0;
+                input{
+                    border-radius: 100px;
+                    border: 0;
+                    text-align: center;
+                    width: 115px;
+                }
+                .btn{
+                    margin: 0 10px;
+                    color: #fff;
+                }
+                .message{
+                    position: relative;
+                    color: #5eb785;
+                    .success{
+                        position: absolute;
+                        span{
+                            position: absolute;
+                            padding: 8px 10px;
+                            top: 4px;
+                            left: 10px;
+                            border-radius: 100px;
+                            border: 0;
+                            background-color: #5eb785;
+                            &:before{
+                                content: "";
+                                background: url(../img/sprite.png) no-repeat top right;
+                                display: inline-block;
+                                width: 19px;
+                                height: 18px;
+                                background-position: -131px -63px;
+                            }
+                        }
+                        p{
+                            padding: 12px 25px;
+                            margin: 0 30px;
+                            border-radius: 100px;
+                            border: 0;
+                            background-color: #fff;
+                            width: 275px;
+                        }
+                    }
+                    .error{
+                        position: absolute;
+                        visibility: hidden;
+                        position: absolute;
+                        span{
+                            position: absolute;
+                            padding: 8px 10px;
+                            top: 4px;
+                            left: 10px;
+                            border-radius: 100px;
+                            border: 0;
+                            background-color: #5eb785;
+                            &:before{
+                                content: "";
+                                background: url(../img/sprite.png) no-repeat top right;
+                                display: inline-block;
+                                width: 19px;
+                                height: 18px;
+                                background-position: -131px -63px;
+                            }
+                        }
+                        p{
+                            padding: 12px 25px;
+                            border-radius: 100px;
+                            border: 0;
+                            background-color: #fff;
+                            width: 275px;
+                        }
                     }
                 }
             }
