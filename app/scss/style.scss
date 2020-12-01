@@ -988,6 +988,9 @@
         &-products{
             display: flex;
             flex-wrap: wrap;
+            div + div{
+                margin-left: 50px;
+            }
             .item{
                 width: 320px;
                 height: 370px;
@@ -1013,6 +1016,7 @@
                     width: 100%;
                 }
                 &-amount{
+                    margin-left: 0;
                     input{
                         width: 40px;
                         background-color: #f4fbff;
@@ -1038,6 +1042,7 @@
             }
         }
         &-order{
+            width: 600px;
             table{
                 th {
                     font-weight: 700;
@@ -1120,6 +1125,31 @@
                             background-color: #fff;
                             width: 275px;
                         }
+                    }
+                }
+            }
+            .check__main-price{
+                display: flex;
+                border: 2px solid #5eb785;
+                width: 450px;
+                .left{
+                    width: 320px;
+                }
+                .right{
+                    width: 130px;
+                    background-color: #dfeee5;
+                    position: relative;
+                    p{
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: #5eb785;
+                    }
+                    span{
+                        text-decoration: line-through;
+                        color: #afafaf;
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
                     }
                 }
             }
