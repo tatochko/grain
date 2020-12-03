@@ -128,11 +128,11 @@
     </div>
   </main>
 
-  <section class="form">
+  <section class="form form--cart">
     <div class="container">
       <h3>Данные получателя</h3>
-      <div class="form__inner">
-        <div class="form__inner-left">
+      <div class="form__inner form__inner--cart">
+        <div class="form__inner-left form__inner-left--cart">
           <form class="box">
             <label for="">Фамилия</label>
             <input type="text" placeholder="Иванов">
@@ -148,9 +148,10 @@
             <input type="text">
           </form>
         </div>
-        <div class="form__inner-right">
+        <div class="form__inner-right form__inner-right--cart">
           <div class="top">
-            <p>Посылка до востребования?</p>
+            <input type="checkbox" class="custom-checkbox" id="happy" name="happy" value="yes">
+            <label for="happy">Посылка до востребования?</label>
           </div>
           <label for="">Номер почтового ящика</label>
           <input type="text">
