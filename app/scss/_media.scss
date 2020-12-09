@@ -5,17 +5,22 @@
             display: block;
             .left{
                 display: block;
+                .mail{
+                    display: none;
+                }
                 .logo{
                     padding: 20px 0;
                 }
             }
             .right{
-                display: block;
-                padding-top: 20px;
+                padding: 20px;
             }
         }
         &__main{
             padding-bottom: 50px;
+            .contacts{
+                display: none;
+            }
             .menu{
                 text-align: center;
                 position: fixed;
@@ -24,7 +29,7 @@
                     display: block;
                     position: absolute;
                     z-index: 50;
-                    top: -200px;
+                    top: -180px;
                     left: 550px;
                 }
                 ul{
@@ -59,5 +64,21 @@
         li{
             padding-bottom: 30px;
         }
+    }
+    .checkout{
+        .checkout__inner{
+            &-products{
+                display: none;
+            }
+            &-order{
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 411px){
+    .header__main .menu .header__btn{
+        left: 270px;
     }
 }
