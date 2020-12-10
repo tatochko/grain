@@ -1044,15 +1044,9 @@
         }
         &-order{
             width: 600px;
-            table{
-                th {
-                    font-weight: 700;
-                    padding: 10px 8px;
-                }
-                td {
-                    padding: 9px 8px;
-                    transition: .3s linear;
-                }
+            .table{
+                display: flex;
+                justify-content: space-between;
             }
             .check__main-inner{
                 display: flex;
