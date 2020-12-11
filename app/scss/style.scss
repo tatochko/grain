@@ -1047,6 +1047,35 @@
             .table{
                 display: flex;
                 justify-content: space-between;
+                &__name{
+                    .amount{
+                        display: none;
+                        &-item{
+                            margin-left: 0;
+                            input{
+                                width: 40px;
+                                background-color: #f4fbff;
+                                border-style: none;
+                                text-align: center;
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                            button{
+                                border-style: none;
+                                background-color: transparent;
+                                cursor: pointer;
+                                font-size: 26px;
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                            .plus{
+                                color: #5eb785;
+                            }
+                        }
+                    }
+                }
             }
             .check__main-inner{
                 display: flex;

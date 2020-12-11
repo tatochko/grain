@@ -71,14 +71,77 @@
                 display: none;
             }
             &-order{
+                .table{
+                    display: grid;
+                    grid-template-areas:
+                    "name name name"
+                    "quantity price total";
+                    &__name{
+                        grid-area: name;
+                        &-inner{
+                            .amount{
+                                display: block;
+                                &-item{
+                                    padding-top: 12px;
+                                }
+                            }
+                        }
+                    }
+                    &-quantity{
+                        grid-area: quantity;
+                    }
+                    &-price{
+                        grid-area: price;
+                    }
+                    &-total{
+                        grid-area: total;
+                    }
+                }
+                .check__main-inner{
+                    display: block;
+                    text-align: center;
+                    padding-bottom: 80px;
+                    padding-top: 30px;
+                    .message{
+                        padding-top: 20px;
+                    }
+                    input{
+                        padding: 12px 5px;
+                    }
+                }
+                .check__main-price{
+                    width: 330px;
+                    margin: 0 auto;
+                }
             }
         }
     }
     
 }
 
-@media (max-width: 411px){
+@media (max-width: 540px){
+    .checkout .checkout__inner-order .check__main-inner .message{
+        margin: 0 17%;
+    }
+}
+
+@media (max-width: 414px){
     .header__main .menu .header__btn{
         left: 270px;
+    }
+    .checkout .checkout__inner-order .check__main-inner .message{
+        margin: 0 8%;
+    }
+}
+
+@media (max-width: 375px){
+    .checkout .checkout__inner-order .check__main-inner .message{
+        margin: 0 4%;
+    }
+}
+
+@media (max-width: 360px){
+    .checkout .checkout__inner-order .check__main-inner .message{
+        margin: 0 2%;
     }
 }
