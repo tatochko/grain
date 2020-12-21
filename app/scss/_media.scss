@@ -123,6 +123,39 @@
     .checkout .checkout__inner-order .check__main-inner .message{
         margin: 0 17%;
     }
+    .form--cart{
+        display: block;
+        .container{
+            padding: 0;
+            h3{
+                padding-left: 20px;
+            }
+            .form__inner--cart{
+                display: block;
+                padding: 0 20px;
+                width: 100%;
+                box-shadow: none;
+                .form__inner-left--cart{
+                    .box{
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+                .form__inner-right--cart{
+                    .top{
+                        background-color: transparent;
+                    }
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+    .form__inner-left{
+        display: block;
+    }
 }
 
 @media (max-width: 414px){
