@@ -31,6 +31,7 @@
                     z-index: 50;
                     top: -180px;
                     left: 550px;
+                    margin-left: 0;
                 }
                 ul{
                     display: none;
@@ -155,6 +156,18 @@
     } 
     .form__inner-left{
         display: block;
+    }
+    .order{
+        .order__inner{
+            display: block;
+            .contacts{
+                ul{
+                    align-items: baseline;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
     }
 }
 
