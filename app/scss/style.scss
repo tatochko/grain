@@ -879,6 +879,18 @@
     .container{
         position: relative;
     }
+    .logo-m{
+        display: none;
+        &:before{
+            content: "";
+            display: inline-block;
+            background: url(../img/sprite.png) no-repeat top right;
+            vertical-align: sub;
+            width: 156px;
+            height: 43px;
+            background-position: -5px -5px;
+        }
+    }
     .footer-sub{
         display: flex;
         align-items: center;
@@ -963,6 +975,9 @@
                 }
             }
         }
+    }
+    .text-m{
+        display: none;
     }
 }
 

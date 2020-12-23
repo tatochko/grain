@@ -169,6 +169,39 @@
             }
         }
     }
+    .footer{
+        .logo-m{
+            display: block;
+            text-align: center;
+            padding-top: 30px;
+        }
+        .footer-sub{
+            display: block;
+            padding: 0;
+            text-align: center;
+            input{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .btn{
+                margin-bottom: 20px;
+                box-shadow: 0px 1.7px 24.3px 1.7px #cecece;
+            }
+        }
+        .menu{
+            display: none;
+        }
+        .text-m{
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            p{
+                margin: 0;
+                padding-bottom: 20px;
+            }
+        }
+    }
 }
 
 @media (max-width: 414px){
