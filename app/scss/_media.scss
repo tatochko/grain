@@ -55,6 +55,20 @@
                     }
                 }
             }
+            &-slider{
+                max-width: 900px;
+                &-item{
+                    .info{
+                        order: 2;
+                    }
+                    .img{
+                        order: 1;
+                    }
+                }
+            }
+            .contacts{
+                display: none;
+            }
         }
         
     }
