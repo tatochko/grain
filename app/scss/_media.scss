@@ -1,3 +1,7 @@
+@media (max-width: 1170px){
+    
+}
+
 @media (max-width: 900px){
     .header{
         &__top{
@@ -134,6 +138,42 @@
     
 }
 
+@media (max-width: 835px){
+    .check{
+        .check__main-inner{
+            display: block;
+            text-align: center;
+            padding-bottom: 80px;
+            .message{
+                padding-top: 20px;
+                margin: 0 26%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .check{
+        .check__main-inner{
+            .message{
+                padding-top: 20px;
+                margin: 0 24%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .check{
+        .check__main-inner{
+            .message{
+                padding-top: 20px;
+                margin: 0 18%;
+            }
+        }
+    }
+}
+
 @media (max-width: 540px){
     .group{
         .group__items{
@@ -169,6 +209,14 @@
                 p{
                     font-size: 14px;
                 }
+            }
+        }
+    }
+    .check{
+        .check__main-inner{
+            .message{
+                padding-top: 20px;
+                margin: 0 15%;
             }
         }
     }
