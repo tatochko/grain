@@ -228,9 +228,12 @@
             &:focus {
                 outline: none;
             }
+            .slick-list .draggable{
+                height: 100%;
+            }
             .slider-arrows{
                 position: absolute;
-                bottom: -35px;
+                bottom: -55px;
                 left: 310px;
             }
             .arrow-next{
@@ -343,6 +346,7 @@
     }
     .slider-dotshead{
         max-width: 200px;
+        padding-top: 30px;
         .slick-current{
             border-top: 4px solid #5ea77e !important;
             .dots-box{ 
