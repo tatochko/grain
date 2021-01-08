@@ -8,6 +8,17 @@ $(function(){
         nextArrow: '<button type = "button" class = "slider-arrows arrow-next"></ button>',
         adaptiveHeight: true,
         asNavFor: '.slider-dotshead',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 600
+                }
+            },
+        ]
     });
 
     $('.slider-dotshead').slick({
