@@ -35,6 +35,17 @@ $(function(){
         prevArrow: '<button type = "button" class = "slider-arrows arrow-prev"></ button>',
         nextArrow: '<button type = "button" class = "slider-arrows arrow-next"></ button>',
         adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 600
+                }
+            },
+        ]
     });
 
     $('.why__slider').slick({
@@ -44,6 +55,17 @@ $(function(){
         prevArrow: '<button type = "button" class = "slider-arrows arrow-prev"></ button>',
         nextArrow: '<button type = "button" class = "slider-arrows arrow-next"></ button>',
         adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 600
+                }
+            },
+        ]
     });
 
     ////////////////////////////////////////////////////////// burger

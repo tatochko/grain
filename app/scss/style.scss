@@ -374,9 +374,10 @@
         padding-top: 130px;
         padding-bottom: 80px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         text-align: center;
         align-items: flex-end;
+        flex-wrap: wrap;
         &-item{
             width: 380px;
             .car{
@@ -532,26 +533,30 @@
                 }
                 .advantages{
                     display: flex;
-                    align-items: center;
-                    span{
-                        padding: 8px 10px;
-                        top: 4px;
-                        left: 10px;
-                        border-radius: 100px;
-                        border: 0;
-                        background-color: #5eb785;
-                        &:before{
-                            content: "";
-                            display: inline-block;
-                            background: url(../img/sprite.png) no-repeat top right;
-                            width: 29px;
-                            height: 26px;
-                            background-position: -288px -63px;
-                        } 
-                    }
-                    p{
-                        + p{
-                            padding-left: 10px;
+                    &-item{
+                        display: flex;
+                        align-items: center;
+                        span{
+                            padding: 8px 10px;
+                            top: 4px;
+                            left: 10px;
+                            border-radius: 100px;
+                            border: 0;
+                            background-color: #5eb785;
+                            margin-right: 10px;
+                            &:before{
+                                content: "";
+                                display: inline-block;
+                                background: url(../img/sprite.png) no-repeat top right;
+                                width: 29px;
+                                height: 26px;
+                                background-position: -288px -63px;
+                            } 
+                        }
+                        p{
+                            + p{
+                                padding-left: 10px;
+                            }
                         }
                     }
                 }
