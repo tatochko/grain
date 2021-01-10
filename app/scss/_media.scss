@@ -46,6 +46,13 @@
             }
         }
     }
+    .form{
+        .form__inner{
+            &-right{
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 900px){
@@ -235,6 +242,7 @@
             display: block;
             text-align: center;
             padding-bottom: 80px;
+            font-size: 16px;
             .message{
                 padding-top: 20px;
                 margin: 0 26%;
@@ -267,6 +275,28 @@
             .message{
                 padding-top: 20px;
                 margin: 0 24%;
+            }
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .form{
+        .form__inner{
+            .form__inner-left{
+                flex-wrap: wrap;
+                .contacts{
+                    padding-top: 20px;
+                    margin: 0 auto;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        li + li{
+                            padding-top: 0;
+                            padding-left: 10px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -432,6 +462,27 @@
     }
 }
 
+@media (max-width: 500px){
+    .why{
+        .why__slider{
+            padding-bottom: 0px;
+            &-item{
+                padding-top: 60px;
+                padding-bottom: 100px;
+                width: 350px !important;
+            }
+        }
+    }
+    .check{
+        .check__main-inner{
+            font-size: 14px;
+            .message{
+                margin: 0 5%;
+            }
+        }
+    }
+}
+
 @media (max-width: 414px){
     .catalog{
         .catalog__slider{
@@ -453,6 +504,29 @@
             }
         }
     }
+    .why{
+        .why__slider{
+            &-item{
+                padding-top: 30px;
+                padding-bottom: 80px;
+                width: 300px !important;
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .check{
+        .check__main-inner{
+            .message{
+                .success{
+                    p{
+                        width: 260px;
+                    }
+                }
+            }
+        }
+    }
     .header__main .menu .header__btn{
         left: 270px;
     }
@@ -461,13 +535,49 @@
     }
 }
 
+@media (max-width: 414px){
+    .check{
+        .check__main-inner{
+            input{
+                margin-bottom: 10px;
+            }
+            .message{
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
 @media (max-width: 375px){
+    .why{
+        .why__slider{
+            &-item{
+                padding-bottom: 55px;
+                width: 250px !important;
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
     .checkout .checkout__inner-order .check__main-inner .message{
         margin: 0 4%;
     }
 }
 
 @media (max-width: 360px){
+    .check{
+        .check__main-inner{
+            .message{
+                margin: 0 auto;
+                .success{
+                    p{
+                        width: 245px;
+                    }
+                }
+            }
+        }
+    }
     .checkout .checkout__inner-order .check__main-inner .message{
         margin: 0 2%;
     }
