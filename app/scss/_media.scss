@@ -84,10 +84,10 @@
                 z-index: 99999;
                 .header__btn{
                     display: block;
-                    position: absolute;
+                    position: fixed;
                     z-index: 50;
-                    top: -180px;
-                    left: 550px;
+                    top: 40px;
+                    left: 90%;
                     margin-left: 0;
                 }
                 ul{
@@ -147,6 +147,15 @@
             }
         }
     }
+    .footer{
+        .footer-sub{
+            flex-wrap: wrap;
+        }
+        .menu{
+            display: none;
+        }
+    }
+    ////////////////////////////////
     .footer ul{
         display: grid;
         grid-template-columns: auto auto;
@@ -211,6 +220,7 @@
 
 @media (max-width: 835px){
     .header{
+        padding-bottom: 0;
         &__main{
             &-slider{
                 width: auto;
@@ -285,12 +295,26 @@
         .form__inner{
             .form__inner-left{
                 flex-wrap: wrap;
+                .box{
+                    margin-bottom: 20px;
+                    width: 100%;
+                    &-inner{
+                        input{
+                            width: 100%;
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                    }
+                }
                 .contacts{
                     padding-top: 20px;
                     margin: 0 auto;
+                    width: 100%;
                     ul{
                         display: flex;
                         align-items: center;
+                        justify-content: space-evenly;
                         li + li{
                             padding-top: 0;
                             padding-left: 10px;
@@ -298,6 +322,11 @@
                     }
                 }
             }
+        }
+    }
+    .footer{
+        .footer-sub{
+            font-size: 16px;
         }
     }
 }
@@ -338,7 +367,7 @@
             display: block;
             padding: 0;
             &-item{
-                width: 350px;
+                width: 100%;
                 .car{
                     width: 50px;
                     height: 39px;
@@ -566,6 +595,17 @@
 }
 
 @media (max-width: 360px){
+    .form{
+        .form__inner{
+            .form__inner-left{
+                .box{
+                    &-inner{
+                        padding: 25px;
+                    }
+                }
+            }
+        }
+    }
     .check{
         .check__main-inner{
             .message{
