@@ -1,3 +1,25 @@
+@media (max-width: 1345px){
+    .checkout{
+        .checkout__inner{
+            &-order{
+                .check__main-inner{
+                    flex-wrap: wrap;
+                    padding-bottom: 60px;
+                    .message{
+                        padding-top: 20px;
+                    }
+                }
+            }
+            &-products{
+                justify-content: center;
+                .item{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px){
     .header{
         .header__main{
@@ -29,6 +51,27 @@
     .group{
         .group__items{
             justify-content: center;
+        }
+    }
+    .order{
+        .order__inner{
+            flex-direction: column;
+            .left{
+                &__inner{
+                    justify-content: start;
+                }
+            }
+            .right{
+                &__inner{
+                    justify-content: start;
+                    &-price{
+                        padding-left: 30px;
+                    }
+                }
+            }
+            .contacts{
+                display: none;
+            }
         }
     }
 }
@@ -86,7 +129,7 @@
                     display: block;
                     position: fixed;
                     z-index: 50;
-                    top: 40px;
+                    top: 15px;
                     left: 90%;
                     margin-left: 0;
                 }
@@ -95,7 +138,7 @@
                     position: absolute;
                     left: -30px;
                     right: 0;
-                    top: -210px;
+                    top: -222px;
                     padding-top: 60px;
                     z-index: 49;
                     background-color: #fff;
@@ -197,12 +240,11 @@
                     }
                 }
                 .check__main-inner{
-                    display: block;
-                    text-align: center;
+                    flex-wrap: nowrap;
                     padding-bottom: 80px;
                     padding-top: 30px;
                     .message{
-                        padding-top: 20px;
+                        padding-top: 0;
                     }
                     input{
                         padding: 12px 5px;
@@ -285,6 +327,22 @@
             .message{
                 padding-top: 20px;
                 margin: 0 24%;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .checkout{
+        .checkout__inner{
+            &-order{
+                .check__main-inner{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .message{
+                        margin: 0 24%;
+                    }
+                }
             }
         }
     }
@@ -589,8 +647,23 @@
             }
         }
     }
-    .checkout .checkout__inner-order .check__main-inner .message{
-        margin: 0 4%;
+    .checkout{
+        .checkout__inner-order{
+            .check__main-inner{
+                .message{
+                    margin: 0 4%;
+                }
+            }
+            .check__main-price{
+                width: 100%;
+                .left{
+                    width: 100%;
+                    h3{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -1009,12 +1009,13 @@
     .checkout__inner{
         display: flex;
         justify-content: space-between;
+        padding-bottom: 40px;
         &-products{
+            width: 800px;
             display: flex;
             flex-wrap: wrap;
-            div + div{
-                margin-left: 50px;
-            }
+            justify-content: space-between;
+            padding-right: 30px;
             .item{
                 width: 320px;
                 height: 370px;
@@ -1066,7 +1067,7 @@
             }
         }
         &-order{
-            width: 600px;
+            width: 730px;
             .table{
                 display: flex;
                 justify-content: space-between;
@@ -1116,6 +1117,7 @@
                 .message{
                     position: relative;
                     color: #5eb785;
+                    width: 100%;
                     .success{
                         position: absolute;
                         span{
@@ -1137,11 +1139,11 @@
                         }
                         p{
                             padding: 12px 25px;
-                            margin: 0 30px;
+                            margin-left: 30px;
+                            margin-top: 0;
                             border-radius: 100px;
                             border: 0;
                             background-color: #fff;
-                            width: 275px;
                         }
                     }
                     .error{
