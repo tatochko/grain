@@ -96,6 +96,11 @@
             }
         }
     }
+    .group{
+        .group__items{
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (max-width: 900px){
