@@ -135,13 +135,13 @@
                     position: fixed;
                     z-index: 50;
                     top: 15px;
-                    left: 90%;
+                    left: 84%;
                     margin-left: 0;
                 }
                 ul{
                     display: none;
                     position: absolute;
-                    left: -30px;
+                    left: -15px;
                     right: 0;
                     top: -222px;
                     padding-top: 60px;
@@ -619,15 +619,12 @@
             }
         }
     }
-    .header__main .menu .header__btn{
-        left: 270px;
-    }
     .checkout .checkout__inner-order .check__main-inner .message{
         margin: 0 8%;
     }
 }
 
-@media (max-width: 414px){
+@media (max-width: 405px){
     .check{
         .check__main-inner{
             input{
