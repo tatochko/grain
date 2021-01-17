@@ -470,6 +470,7 @@
             }
         }
         .arrow-prev{
+            z-index: 9;
             border-radius: 100px;
             border-style: none;
             padding: 20px 32px 20px 28px;
@@ -563,6 +564,7 @@
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    padding-bottom: 20px;
                     .btn{
                         color: #fff;
                     }
@@ -634,6 +636,7 @@
             }
         }
         .arrow-prev{
+            z-index: 9;
             border-radius: 0 0 10em 10em;
             border-style: none;
             padding: 30px 10px 12px 10px;
